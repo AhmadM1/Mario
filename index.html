@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html> <head> 
+    <title> Drop Down Menu </title>
+    <link rel="stylesheet" href="style23.css">  
+    </head>
+    
+<body><nav class="menu">
+    
+    <div id="logo"> Ahmad Muharam</div>
+   <ul id="rmenu"> 
+    <li><a class="menu-item" href="#">About</a> </li>
+     <li><a class="menu-item" href="#">Biography</a>
+       <div class="sub-content">
+           <div class="sub-drop"> 
+                <ul> 
+                    <li><a href="#">Photoshop </a></li>
+                    <li><a href="#">Illustrator</a></li>
+                    <li><a href="#">Indesign</a>
+                        
+                    </li>
+               </ul>
+           </div>
+         </div></li>
+     <li><a class="menu-item" href="#">Gallery</a> 
+         <div class="sub-content">
+             <div class="sub-drop"> 
+                <ul> 
+                    <li><a href="#">HTML CSS </a></li>
+                    <li><a href="#">Java Script</a></li>
+                </ul>
+           </div></div></li>
+       <li><a class="menu-item" href="#">Content</a> </li>
+     </ul></nav>
+    <hr><br><br><br><br>
+    
+    <div id="big_para">
+    <div id="sidebar">
+    <h3> THTLE OF SIDE BAR </h3>
+        Super Mario[a] is a series of fantasy platform games created by Nintendo featuring their mascot, Mario. Alternatively called the Super Mario Bros.[b] series or simply the Mario[c] series, it is the central series of the greater Mario franchise. At least one Super Mario game has been released for every major Nintendo video game console.
+    </div>
+    <div id="para">
+             
+            <img src="imags/mario3.jpg">
+            <h2>
+                HI, I AM <a href="http://www.google.com" style="text-decoration: underline"> MARIO </a>
+            </h2>
+            <p>
+            Super Mario[a] is a series of fantasy platform games created by Nintendo featuring their mascot, Mario. Alternatively called the Super Mario Bros.[b] series or simply the Mario[c] series, it is the central series of the greater Mario franchise. At least one Super Mario game has been released for every major Nintendo video game console.
+
+            The Super Mario games follow Mario's adventures, typically in the fictional Mushroom Kingdom with Mario as the player character. He is often joined by his brother, Luigi, and occasionally by other members of the Mario cast. As in platform video games, the player runs and jumps across platforms and atop enemies in themed levels. The games have simple plots, typically with Mario rescuing the kidnapped Princess Peach from the primary antagonist, Bowser. The first title in the series, Super Mario Bros., released for the Nintendo Entertainment System (NES) in 1985, established gameplay concepts and elements prevalent in nearly every Super Mario game since. These include a multitude of power-ups and items that give Mario special magic powers such as fireball-throwing and size-changing into giant and miniature sizes.[1]
+            </p>
+            <p2 id="conatact">
+                <img src="imags/mario1.jpg" width="80px;"/>
+                <img src="imags/mario.jpg" width="250px"/>
+                <img src="imags/mario2.jpg" width="60px;"/>
+            </p2>
+         </div> 
+    </div>
+ <div id="footer"><img src="imags/mario%20background.png" width="25px">
+</div> 
+    
+    </body></html>
+
+
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    font-style: italic;
+    border-radius: 
+}
+body{
+    background-color: #ecf0f1;
+}
+/*-----------------------------------------------*/
+
+.menu{
+    position: fixed;
+    z-index: 100;
+    box-shadow: -1px 34px 8px rgba(0,045,0,0.3);
+    width: 100%;
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce0000+0,f25252+62 */
+background: #ce0000; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ce0000 0%, #f25252 62%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ce0000 0%,#f25252 62%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ce0000 0%,#f25252 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce0000', endColorstr='#f25252',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    color: #fff;
+    height: 60px;
+}
+.menu #logo{
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+    font-size: 1,2em;
+    line-height: 30px;
+}
+.menu > ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+.menu > ul > li{
+    float: left;
+}
+.menu-item{
+    display: inline-block;
+    padding: 15px 20px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+.menu-item:hover{
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce0000+0,f25252+62 */
+background: #ce0000; /* Old browsers */
+background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f24000+0,ffaa56+90,ffaa56+90 */
+background: #f24000; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #f24000 0%, #ffaa56 90%, #ffaa56 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #f24000 0%,#ffaa56 90%,#ffaa56 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #f24000 0%,#ffaa56 90%,#ffaa56 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24000', endColorstr='#ffaa56',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;}
+/*--------------------styling sub---------------------------*/
+
+.sub-content{
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: #2c3e50;
+    max-height: 0;
+}
+.sub-drop {
+    padding: 0;
+}
+.sub-drop a{
+    color: white;
+    text-decoration: none;
+    padding: 0;
+}
+.sub-drop ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sub-drop ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.sub-drop ul li:hover{
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce0000+0,f25252+62 */
+background: #ce0000; /* Old browsers */
+background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f24000+0,ffaa56+90,ffaa56+90 */
+background: #f24000; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #f24000 0%, #ffaa56 90%, #ffaa56 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #f24000 0%,#ffaa56 90%,#ffaa56 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #f24000 0%,#ffaa56 90%,#ffaa56 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24000', endColorstr='#ffaa56',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+}
+/*--------------------sub-sub-menu--------------------------*/
+
+/*--------------------controling--------------------------*/
+
+.menu-item:focus{
+    background-color: #ff0055;
+}
+.menu ul li:hover .sub-content{
+    max-height: 400px;
+    transition: max-height 1s ease-in;
+    -webkit-transition: max-height 1s ease-in;
+    -moz-transition: max-height 1s ease-in;
+}
+
+#rmenu{
+    float: right;
+}
+
+/*--------------------content-----------------------*/
+
+
+</style>
+
+<style>
+
+#conatact {
+    display: bloc;
+}
+
+#footer {
+    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce0000+0,f25252+62 */
+background: #ce0000; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ce0000 0%, #f25252 62%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ce0000 0%,#f25252 62%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ce0000 0%,#f25252 62%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce0000', endColorstr='#f25252',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+    margin-bottom: 10px;
+}
+
+p {
+    background-color: yellow
+}
+
+h2 {
+    background-color: yellow;
+}
+
+#big_para {
+    background-color: #232a3a
+}
+div {
+    text-align: center;
+    /*border: solid black 1px;*/}
+    
+    #sidebar {
+    width: 28%;
+    background-color: yellow;
+    border: solid black 2px;
+    float: right;
+    height: 550px;
+    margin-right: 10px
+}
+  #para {
+    text-align: center;
+    width: 69%;
+    background-color: white;  
+</style>
+
+
